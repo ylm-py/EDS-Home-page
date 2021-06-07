@@ -1,0 +1,112 @@
+.hero-wrapper {
+    background: url(../imgs/herobg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 10rem;
+}
+.hero-section {
+    display: flex;
+}
+.logo-container {
+    flex: 1;
+}
+.intro-container {
+    flex: 1.5;
+    align-self: center;
+}
+.hero-title {
+    color: #0c3453;
+    font-weight: 700;
+    font-family: "Roboto";
+    margin-bottom: .7em;
+}
+.hero-text {
+    font-size: 1rem;
+    color: #7c97b8;
+    margin-bottom: 1em;
+}
+.hero-btn{
+    box-shadow: 2px 2px 8px rgba(0,0,0,.2);
+    text-transform: uppercase;
+    font: 500 1em "Roboto";
+}
+.hero-section .bg__shapes:first-of-type{
+    width: 20vw;
+    height: 20vw;
+    max-width: 300px;
+    max-height: 300px;
+    bottom: -50px;
+    left: 0;
+    transform: translateX(-50%);
+}
+.hero-section .bg__shapes:last-of-type{
+    width: 15vw;
+    height: 15vw;
+    max-width: 200px;
+    max-height: 200px;
+    bottom: -50px;
+    right: 0;
+    transform: translateX(50%);
+}
+.dotted{
+    display: block;
+    position: absolute;
+    bottom: -100px;
+    right: 50%;
+    transform: translateX(50%);
+    background: url("../imgs/dotted__black.png");
+    width: 20vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 400px;
+    min-width: 100px;
+}
+@media only screen and (max-width: 500px) {
+    .hero-section{
+        padding: 7vw 3vw;
+    }
+    .intro-container{
+        margin-top: 3rem;
+    }
+    
+}
+@media only screen and (max-width: 400px){
+    .hero-btn{
+        font-size: .8em !important;
+    }
+}
+@media only screen and (max-width: 350px){
+    .hero-title{
+        font-size: 2rem;
+    }
+    .hero-text{
+        font-size: .9rem;
+    }
+}
+@media only screen and (min-width: 650px){
+    .hero-title{
+        font-size: 3.4rem;
+    }
+    .hero-text{
+        font-size: 1.2rem;
+    }
+}
+@media only screen and (min-width: 800px){
+    .hero-wrapper{
+        padding-top: 5rem;
+    }
+    .hero-btn{
+        font-size: 2.2rem !important;
+    }
+    .hero-text{
+        font-size: 1.3rem;
+    }
+}
+@media only screen and (min-width: 1000px){
+    .hero-title{
+        font-size: 5rem;
+    }
+    .hero-text{
+        font-size: 1.7rem;
+    }
+}

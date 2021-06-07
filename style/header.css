@@ -6,6 +6,7 @@ header {
     display: flex;
     flex-flow: column wrap;
     z-index: 100;
+    background: transparent;
 }
 
 .nav-menu-icon {
@@ -70,7 +71,7 @@ header {
         justify-content: center;
         align-items: center;
         flex-flow: row nowrap;
-        padding: 5rem 0;
+        padding: 5rem 0 0;
     }
     nav{
         display: flex;
