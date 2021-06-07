@@ -3,6 +3,7 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     padding-bottom: 10rem;
+    overflow: hidden;
 }
 .hero-section {
     display: flex;
