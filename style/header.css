@@ -1,0 +1,114 @@
+header {
+    position: fixed;
+    width: 100%;
+    bottom: 2rem;
+    right: 1.5rem;
+    display: flex;
+    flex-flow: column wrap;
+    z-index: 100;
+}
+
+.nav-menu-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 20px;
+    align-self: flex-end;
+}
+
+.burger-line {
+    width: 25px;
+    height: 5px;
+    background: #0c3453;
+    display: block;
+    border-radius: 5px;
+    transform-origin: 26%;
+    transition: all 0.3s;
+}
+.burger-line + .burger-line {
+    margin-top: 4px;
+}
+
+.nav-links-container {
+    transform: translateX(150%);
+    transition: all 0.4s ease-in;
+    flex-flow: column;
+    align-items: flex-end;
+}
+
+.link-item + .link-item {
+    margin-top: 10px;
+}
+.link-item {
+    padding: 0.9rem 2em;
+    background: #fff;
+    border-radius: 2rem;
+    word-wrap: normal;
+}
+.link-item:not(.donate){
+    display: none;
+}
+.link-item a {
+    color: #0c3453;
+    font-weight: bold;
+}
+.appear {
+    transform: translateX(0);
+}
+
+@media only screen and (min-width: 800px) {
+    header {
+        top: 0;
+        left: 0;
+        bottom: unset;
+        right: unset;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row nowrap;
+        padding: 5rem 0;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        padding: .7rem 4rem;
+        background: #fff;
+        border-radius: 5rem;
+    }
+    .nav-menu-icon {
+        display: none;
+        pointer-events: none;
+    }
+    .nav-links-container {
+        transform: none;
+        flex-flow: row;
+        align-items: center;
+    }
+    .link-item {
+        padding: 0;
+        background: none;
+        border-radius: unset;
+        display: block !important;
+    }
+    .link-item.donate{
+        display: block;
+        padding: .7rem 1rem;
+        background: #0c3453;
+        border-radius: 5rem;
+    }
+    .link-item.donate a {
+        color: #fff;
+    }
+    .link-item + .link-item {
+        margin-left: 33px;
+        margin-top: 0;
+    }
+    .link-item:not(.debating){
+        flex-shrink: 3;
+    }
+}
