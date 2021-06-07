@@ -82,7 +82,7 @@ section + section, .about-section{
 .section-title{
     color: var(--main-clr);
     text-align: center;
-    font: bold 3rem "Roboto";
+    font: bold 2.5rem "Roboto";
     margin-bottom: 2em;
 }
 .element-title{
