@@ -1,0 +1,54 @@
+/* importing files to the generale css file  */
+@import url("./header.css");
+@import url("./hero.css");
+@import url("./about.css");
+
+:root{
+    --main-clr : #0C3453;
+    --second-clr: #7C97B8;
+}
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    outline: none;
+}
+html{
+    scroll-behavior: smooth;
+    font: 400 10px 'Poppins', sans-serif;
+    box-sizing: border-box;
+    
+}
+body{
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 400;
+    z-index: 2;
+}
+body.open-nav{
+    overflow: hidden;
+}
+body.open-nav::after{
+    overflow: hidden;
+    content: "";
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, .7);
+    z-index: 5;
+    inset: 0;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
