@@ -78,3 +78,20 @@ section{
 section + section, .about-section{
     margin-top: 10rem;
 }
+
+.section-title{
+    color: var(--main-clr);
+    text-align: center;
+    font: bold 3rem "Roboto";
+    margin-bottom: 2em;
+}
+.element-title{
+    text-transform: capitalize;
+    font: bold 2.5rem "Roboto";
+}
+@media only screen and (min-width: 1000px){
+    .section-title{
+        font-size: 4rem;
+        
+    }
+}

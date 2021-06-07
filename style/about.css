@@ -1,0 +1,38 @@
+.about-section{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.club-container{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 5rem;
+}
+.club-item{
+    max-width: 350px;
+}
+.club-title{
+    color: #0C3453;
+    margin-bottom: 1rem;
+}
+.club-text{
+    color: #94A2B3;
+}
+.club-learn-more{
+    color: #299EF3;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 800px){
+    .club-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .club-container{
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: center;
+    }
+}
+
