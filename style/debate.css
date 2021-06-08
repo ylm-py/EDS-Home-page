@@ -13,7 +13,6 @@
 .debate-text{
     color: rgba(255, 255, 255, 0.7);
     margin-bottom: 2em;
-    text-align: center;
 }
 .db + .db{
     margin-top: 6rem;
