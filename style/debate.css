@@ -33,7 +33,43 @@
     transform: translateX(-50%);
     z-index: -1;
 }
+.debate-evenings .bg__shapes:nth-child(1){
+    padding: 40%;
+    bottom: 0;
+}
+.debate-evenings .bg__shapes:nth-child(2){
+    padding: 5%;
+
+}
+.membership .bg__shapes:nth-child(1){
+    padding: 25%;
+    top: -6rem;
+    right: 0;
+}
+.membership .bg__shapes:nth-child(2){
+    padding: 5%;
+
+}
 @media (min-width: 500px){
+    .debate-icon::after{
+        content: "";
+        position: absolute;
+        max-width: 400px;
+        min-width: 100px;
+        left: 0;
+        bottom: 2rem;
+        background: url(../imgs/dotted.png) no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        width: 90%;
+        height: 35%;
+        z-index: -2;
+    }
+    .debate-evenings .debate-icon::after{
+        transform: rotate(90deg);
+        top: 2rem;
+        left: -6rem;
+    }
     .debate-icon{
         max-width: 45%;
         shape-outside: circle();
@@ -53,7 +89,7 @@
 }
 @media (min-width: 600px){
     .wrapper-debate{
-        max-width: 950px;
+        max-width: 1100px;
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -112,5 +148,9 @@
     }
     .debate-content{
         padding: 3rem;
+    }
+    .debate-evenings .debate-icon::after{
+        bottom: 0;
+        transform: translateY(150%) rotate(90deg);
     }
 }
