@@ -1,19 +1,116 @@
-.debating-section{
-    background-color: #0C3453;
+.debating-section {
+    background-color: #0c3453;
     color: #fff;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     padding: 6.5rem 2rem;
-    align-items: center;
 }
-.debate-title{
-    text-align: center;
+
+.debate-title {
     margin-bottom: 1em;
 }
-.debate-text{
+.debate-text {
     color: rgba(255, 255, 255, 0.7);
     margin-bottom: 2em;
 }
-.db + .db{
-    margin-top: 6rem;
+.db + .db {
+    margin-top: 8rem;
+}
+.debate-icon{
+    position: relative;
+    z-index: 1;
+}
+.debate-icon::before{
+    content: "";
+    position: absolute;
+    width: 55%;
+    height: 70%;
+    background: linear-gradient(0deg, #F1F7FB, #F1F7FB), #FFFFFF;
+    box-shadow: -15px 20px 30px rgba(40, 46, 79, 0.5);
+    border-radius: 20px;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+@media (min-width: 500px){
+    .debate-icon{
+        max-width: 45%;
+        shape-outside: circle();
+    }
+    .debate-evenings .debate-icon{
+        float: left;
+    }
+    .debate-evenings .debate-icon{
+        margin-right: 3rem;
+    }
+    .debate-content a{
+        transform: translateX(100%);
+    }
+    .membership .debate-icon{
+        float: right;
+    }
+}
+@media (min-width: 600px){
+    .wrapper-debate{
+        max-width: 950px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .db{
+        display: flex;
+    }
+    .membership .debate-icon{
+        order: 2;
+    }
+    .db .debate-icon{
+        flex: 2;
+    }
+    .debate-content{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+    .db{
+        max-width: 700px;
+    }
+    .wrapper-debate .db:nth-child(1){
+        align-self: flex-start;
+    }
+    .wrapper-debate .db:nth-child(2){
+        align-self: flex-end;
+    }
+    .debate-content a{
+        transform: none;
+        align-self: flex-start;
+    }
+}
+@media (min-width: 800px){
+    .wrapper-debate{
+        padding: 0 6rem;
+    }
+    .debating-section{
+        padding: 0;
+        margin-top: 20rem;
+    }
+    .debate-icon{
+        scale: 1.3;
+    }
+    .db + .db{
+        margin-top: 10rem;
+    }
+    .debate-icon::before{
+        width: 70%;
+        height: 80%;
+    }
+    .membership .debate-icon{
+        transform: translateY(20%);
+    }
+    .db{
+        align-items: center;
+    }
+    .debate-content{
+        padding: 3rem;
+    }
 }
