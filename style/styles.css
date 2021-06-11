@@ -3,6 +3,7 @@
 @import url("./hero.css");
 @import url("./about.css");
 @import url("./debate.css");
+@import url("./quotes.css");
 
 :root{
     --main-clr : #0C3453;
@@ -45,6 +46,7 @@ body.open-nav::after{
 }
 img{
     max-width: 100%;
+    user-select: none;
 }
 a{
     text-decoration: none;

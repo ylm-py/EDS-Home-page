@@ -19,4 +19,21 @@ function openNav(){
         l3.style.transform = "rotate(0deg)";
     }
 }
-navButton.addEventListener("click", openNav)
+navButton.addEventListener("click", openNav);
+
+
+let quotes = document.querySelectorAll(".quote_container")
+let quoteStyle = (q, i) => {
+    q.style.position = "absolute";
+    q.style.top = "5rem";
+    q.style.zIndex = `${i}`;
+    q.style.transform = `translateY(${i * 15}px) translateZ(-${i * 15}px)`
+}
+quotes.forEach(function(ele, index){
+    if(index != 0){
+        quoteStyle(ele, index)
+    }
+    else{
+        ele.style.zIndex = quotes.length
+    }
+})
