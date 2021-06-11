@@ -35,16 +35,16 @@
     text-align: center;
     color: #94A2B3;
     line-height: 1.4;
-    font: 1.9rem "Roboto";
+    font: 1.7rem "Roboto";
     margin-bottom: 2rem;
     z-index: 2;
 }
 .owner{
     display: inline-block;
     color: #0C3453;
-    font: 600 1.8rem sans-serif;
+    font: 600 1.6rem sans-serif;
     padding-bottom: .5rem;
-    border-bottom: 1px solid #0C3453;
+    border-bottom: 2px solid #0C3453;
 }
 .quote-arrows{
 
